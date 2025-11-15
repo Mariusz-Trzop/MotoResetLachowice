@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotoReset Lachowice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-circle"></div>
+            <div>
+                <h1>MotoReset Lachowice</h1>
+                <div class="tagline">Wolność zaczyna się za linią miasta</div>
+            </div>
+        </div>
+
+        <!-- PRZYCISK HAMBURGERA (TYLKO NA TEL.) -->
+        <button class="menu-toggle" aria-label="Otwórz menu nawigacji">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- MENU GÓRNE -->
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#o-nas">O klubie</a></li>
+                <li><a href="#czlonkowie">Członkowie</a></li>
+                <li><a href="#trasy">Nasze trasy</a></li>
+                <li><a href="#wydarzenia">Wydarzenia</a></li>
+                <li><a href="#dodaj-czlonka">Dodaj członka</a></li>
+                <li><a href="#dodaj-trase">Dodaj trasę</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- START – DOMYŚLNIE WIDOCZNA -->
+        <section id="start" class="hero section-full page-section active">
+            <h2>Witamy w MotoReset Lachowice</h2>
+            <p>Tu kręcą nas zakręty, a nie licznik przebiegu. Dołącz do naszej ekipy i rusz z nami w trasę.</p>
+            <p class="meta">Sezon: 2025 &bull; Region: Lachowice i okolice</p>
+        </section>
+
+        <!-- O NAS -->
+        <section id="o-nas" class="section section-full page-section">
+            <h3>O klubie</h3>
+            <div class="card">
+                <p>Opisz tutaj historię klubu, zasady, klimat i to, czym się wyróżniacie. 
+                    Możesz dodać informację, jakie motocykle dominują w klubie 
+                    (np. turystyki, choppery, enduro).</p>
+            </div>
+        </section>
+
+        <!-- CZŁONKOWIE -->
+        <section id="czlonkowie" class="section section-full page-section">
+            <h3>Członkowie</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <strong>Ksywa 1</strong>
+                    Motocykl: Model / Pojemność<br>
+                    Rola: Prezes / Road Captain
+                </div>
+                <div class="card">
+                    <strong>Ksywa 2</strong>
+                    Motocykl: Model / Pojemność<br>
+                    Rola: Zastępca / Mechanik
+                </div>
+                <div class="card">
+                    <strong>Ksywa 3</strong>
+                    Motocykl: Model / Pojemność<br>
+                    Rola: Członek założyciel
+                </div>
+            </div>
+        </section>
+
+        <!-- TRASY -->
+        <section id="trasy" class="section section-full page-section">
+            <h3>Nasze trasy</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <strong>Trasa 1</strong>
+                    Dystans: ok. 150 km<br>
+                    Opis: Kręte drogi, fajne widoki, postój przy jeziorze.
+                </div>
+                <div class="card">
+                    <strong>Trasa 2</strong>
+                    Dystans: ok. 250 km<br>
+                    Opis: Dłuższy wypad weekendowy + grill.
+                </div>
+                <div class="card">
+                    <strong>Trasa 3</strong>
+                    Dystans: ok. 80 km<br>
+                    Opis: Krótki wypad wieczorny po pracy.
+                </div>
+            </div>
+        </section>
+
+        <!-- WYDARZENIA -->
+        <section id="wydarzenia" class="section section-full page-section">
+            <h3>Wydarzenia</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <strong>Zlot otwarcia sezonu</strong>
+                    Data: 12.04.2025<br>
+                    Miejsce: ...
+                </div>
+                <div class="card">
+                    <strong>Nocna jazda</strong>
+                    Data: 30.05.2025<br>
+                    Miejsce: ...
+                </div>
+                <div class="card">
+                    <strong>Wyjazd charytatywny</strong>
+                    Data: 15.06.2025<br>
+                    Miejsce: ...
+                </div>
+            </div>
+        </section>
+
+        <!-- DODAJ CZŁONKA -->
+        <section id="dodaj-czlonka" class="section section-full page-section">
+            <h3>Dodaj członka klubu</h3>
+            <div class="card">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="nick">Ksywa / pseudonim</label>
+                        <input type="text" id="nick" name="nick" placeholder="Np. Żbik" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="imie">Imię</label>
+                        <input type="text" id="imie" name="imie" placeholder="Imię" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="moto">Motocykl</label>
+                        <input type="text" id="moto" name="moto" placeholder="Model, pojemność, rocznik" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rola">Rola w klubie</label>
+                        <select id="rola" name="rola">
+                            <option value="czlonek">Członek</option>
+                            <option value="prezes">Prezes</option>
+                            <option value="zastepca">Zastępca prezesa</option>
+                            <option value="road-captain">Road Captain</option>
+                            <option value="mechanik">Mechanik</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="opis-czlonka">Krótki opis</label>
+                        <textarea id="opis-czlonka" name="opis_czlonka" rows="3" placeholder="Kilka słów o nim/niej..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Dodaj członka</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- DODAJ TRASĘ -->
+        <section id="dodaj-trase" class="section section-full page-section">
+            <h3>Dodaj trasę</h3>
+            <div class="card">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="nazwa-trasy">Nazwa trasy</label>
+                        <input type="text" id="nazwa-trasy" name="nazwa_trasy" placeholder="Np. Jeziora Północy" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dystans">Dystans (km)</label>
+                        <input type="number" id="dystans" name="dystans" min="1" step="1" placeholder="Np. 150" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="poziom">Poziom trudności</label>
+                        <select id="poziom" name="poziom">
+                            <option value="latwa">Łatwa</option>
+                            <option value="srednia">Średnia</option>
+                            <option value="trudna">Trudna</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="opis-trasy">Opis trasy</label>
+                        <textarea id="opis-trasy" name="opis_trasy" rows="4" placeholder="Co po drodze, nawierzchnia, postoje, widoki..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mapa">Link do mapy (np. Google Maps)</label>
+                        <input type="url" id="mapa" name="mapa" placeholder="https://...">
+                    </div>
+
+                    <button type="submit" class="btn-primary">Dodaj trasę</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section id="galeria" class="section section-full page-section">
+            <h3>Galeria</h3>
+            <div class="card">
+                <p>Tu później możesz wstawić zdjęcia z wypadów (np. w formie siatki obrazków albo slidera).</p>
+            </div>
+        </section>
+
+        <!-- KONTAKT -->
+        <section id="kontakt" class="section section-full page-section">
+            <h3>Kontakt</h3>
+            <div class="card">
+                <ul class="contact-list">
+                    <li>E-mail: kontakt@twojklubmoto.pl</li>
+                    <li>Facebook / Instagram: @twojklubmoto</li>
+                    <li>Spotkania: każdy piątek, godz. 19:00, adres garażu / miejscówki</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 MotoReset Lachowice – Wszystkie prawa zastrzeżone</p>
+    </footer>
+
+    <!-- SKRYPT: HAMBURGER + PRZEŁĄCZANIE SEKCJI -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.top-nav');
+    const links = document.querySelectorAll('.top-nav a[href^="#"]');
+    const sections = document.querySelectorAll('.page-section');
+
+    // hamburger – pokazuje / chowa menu
+    if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+            nav.classList.toggle('open');
+        });
+    }
+
+    function showSection(hash) {
+        sections.forEach(section => {
+            if ('#' + section.id === hash) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+    }
+
+    // klik w link menu – pokazuje wybraną sekcję
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            const hash = this.getAttribute('href');
+
+            if (hash && hash.startsWith('#')) {
+                e.preventDefault();
+                showSection(hash);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                nav.classList.remove('open');
+            }
+        });
+    });
+
+    // 🔥 ZAWSZE START — niezależnie od hash / odświeżenia
+    showSection('#start');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+/* Jasny, przyjemny styl + hamburger + zakładki */
+
+/* --- BAZA --- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #e5e7eb; /* jasny, nie biały */
+    color: #1f2937;
+}
+
+/* --- HEADER + LOGO --- */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #f3f4f6;
+    color: #1f2937;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border-bottom: 1px solid #d1d5db;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header .logo-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #e63946;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #1f2937;
+}
+
+header .tagline {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* --- MENU GÓRNE --- */
+
+.top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.top-nav li {
+    margin: 0;
+}
+
+.top-nav a {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #374151;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.top-nav a:hover {
+    background: #e63946;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* --- HAMBURGER --- */
+
+.menu-toggle {
+    display: none; /* desktop */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #e5e7eb;
+    padding: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    border-radius: 999px;
+    background: #111111;
+    margin: 3px 0;
+}
+
+/* --- MAIN / SEKCJE --- */
+
+main {
+    padding: 24px;
+    padding-top: 120px; /* miejsce na fixed header */
+}
+
+.section-full {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Widoczność sekcji – zakładki */
+
+.page-section {
+    display: none;
+}
+
+.page-section.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #ffffff, #f3f4f6);
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 32px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.hero h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: #e63946;
+}
+
+.hero p {
+    color: #374151;
+}
+
+.hero .meta {
+    color: #6b7280;
+}
+
+/* OGÓLNE SEKCJE */
+
+.section {
+    margin-bottom: 32px;
+    scroll-margin-top: 120px;
+}
+
+.section h3 {
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    border-left: 3px solid #e63946;
+    padding-left: 10px;
+    color: #1f2937;
+}
+
+/* KARTY */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    font-size: 0.95rem;
+}
+
+.card strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #111827;
+}
+
+/* KONTAKT LISTA */
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.contact-list li {
+    margin-bottom: 6px;
+    color: #374151;
+}
+
+/* FORMULARZE */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #1f2937;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #e63946;
+    box-shadow: 0 0 0 1px rgba(230,57,70,0.4);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* PRZYCISK */
+
+.btn-primary {
+    align-self: flex-start;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    background: #e63946;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.1s;
+}
+
+.btn-primary:hover {
+    background: #f0525f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* STOPKA */
+
+footer {
+    background: #f3f4f6;
+    color: #4b5563;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: 1px solid #d1d5db;
+}
+
+/* --- RESPONSYWNOŚĆ --- */
+
+@media (max-width: 768px) {
+    header {
+        gap: 12px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .top-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #f3f4f6;
+        padding: 8px 16px 12px;
+        border-bottom: 1px solid #d1d5db;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        display: none;
+    }
+
+    .top-nav.open {
+        display: block;
+    }
+
+    .top-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .top-nav a {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    main {
+        padding: 16px;
+        padding-top: 140px;
+    }
+
+    .section-full {
+        min-height: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .top-nav {
+        display: block;
+        position: static;
+        box-shadow: none;
+        border-bottom: 0;
+        padding: 0;
+    }
+}
