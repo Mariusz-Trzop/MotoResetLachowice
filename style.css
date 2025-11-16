@@ -35,7 +35,7 @@ header {
     z-index: 10;
 
     /* półprzezroczyste tło + blur */
-    background: rgba(243, 244, 246, 0.85);
+    background: rgba(243, 244, 246, 0.50);
     backdrop-filter: blur(6px);
 
     color: #1f2937;
@@ -228,8 +228,8 @@ main {
 .hero {
     background: linear-gradient(
         135deg,
-        rgba(255, 255, 255, 0.85),
-        rgba(243, 244, 246, 0.85)
+        rgba(255, 255, 255, 0.50),
+        rgba(243, 244, 246, 0.50)
     );
     border-radius: 16px;
     padding: 28px 24px;
@@ -280,7 +280,7 @@ main {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.50);
     border-radius: 12px;
     padding: 14px 16px;
     border: 1px solid rgba(209, 213, 219, 0.9);
@@ -384,7 +384,7 @@ main {
 /* STOPKA */
 
 footer {
-    background: rgba(243, 244, 246, 0.85);
+    background: rgba(243, 244, 246, 0.50);
     color: #4b5563;
     padding: 12px 24px;
     text-align: center;
