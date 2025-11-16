@@ -62,6 +62,39 @@ header .tagline {
     color: #4b5563;
 }
 
+/* LOGO Z OBRAZKA */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-img {
+    height: 70px;            /* wielkość logo */
+    width: auto;
+    border-radius: 50%;      /* możesz usunąć jeśli nie chcesz okrągłego */
+    object-fit: contain;
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.logo-text .tagline {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* Responsywność: logo mniejsze na telefonie */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 50px;
+    }
+}
+
+
 /* --- MENU GÓRNE --- */
 
 .top-nav ul {
