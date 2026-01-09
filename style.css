@@ -82,16 +82,15 @@ header .tagline {
 }
 
 .logo-img {
-    height: 110px;       /* większe logo */
+    height: 110px;
     width: auto;
     border-radius: 50%;
-    object-fit: contain;
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.6));
-
-    /* animacja startowa */
     opacity: 0;
     animation: logoSlideIn 0.9s ease-out forwards;
 }
+
+
 /* animacja tekstu obok logo */
 
 .logo-text {
@@ -163,7 +162,7 @@ header .tagline {
     border-radius: 6px;
     text-decoration: none;
     color: #374151;
-    font-size: 0.85rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     transition: background 0.2s, color 0.2s, transform 0.1s;
 }

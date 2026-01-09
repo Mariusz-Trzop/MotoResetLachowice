@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-        <img src="IMG/579557940_1587326636011125_7477179322749718171_n.jpg" alt="Moto Reset Lachowice" class="logo-img">
+        <img src="IMG/Black Retro Motorcycle Circle Logo (1).png" alt="Moto Reset Lachowice" class="logo-img">
         <div class="logo-text">
             <h1>MOTO RESET LACHOWICE</h1>
-            <div class="tagline">Wolność zaczyna się za linią miasta</div>
+            <div class="tagline">TAK WIELE DRÓG, JEDEN CEL!</div>
         </div>
     </div>
 
@@ -31,11 +34,8 @@
             <ul>
                 <li><a href="#start">Start</a></li>
                 <li><a href="#o-nas">O klubie</a></li>
-                <li><a href="#czlonkowie">Członkowie</a></li>
                 <li><a href="#trasy">Nasze trasy</a></li>
                 <li><a href="#wydarzenia">Wydarzenia</a></li>
-                <li><a href="#dodaj-czlonka">Dodaj członka</a></li>
-                <li><a href="#dodaj-trase">Dodaj trasę</a></li>
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
@@ -45,9 +45,9 @@
     <main>
         <!-- START – DOMYŚLNIE WIDOCZNA -->
         <section id="start" class="hero section-full page-section active">
-            <h2>Witamy w MotoReset Lachowice</h2>
+            <h2>Witamy w MOTORESET LACHOWICE</h2>
             <p>Tu kręcą nas zakręty, a nie licznik przebiegu. Dołącz do naszej ekipy i rusz z nami w trasę.</p>
-            <p class="meta">Sezon: 2025 &bull; Region: Lachowice i okolice</p>
+            <p class="meta">Sezon: 2026 &bull; Region: Lachowice i okolice</p>
         </section>
 
         <!-- O NAS -->
@@ -57,28 +57,6 @@
                 <p>Opisz tutaj historię klubu, zasady, klimat i to, czym się wyróżniacie. 
                     Możesz dodać informację, jakie motocykle dominują w klubie 
                     (np. turystyki, choppery, enduro).</p>
-            </div>
-        </section>
-
-        <!-- CZŁONKOWIE -->
-        <section id="czlonkowie" class="section section-full page-section">
-            <h3>Członkowie</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <strong>Ksywa 1</strong>
-                    Motocykl: Model / Pojemność<br>
-                    Rola: Prezes / Road Captain
-                </div>
-                <div class="card">
-                    <strong>Ksywa 2</strong>
-                    Motocykl: Model / Pojemność<br>
-                    Rola: Zastępca / Mechanik
-                </div>
-                <div class="card">
-                    <strong>Ksywa 3</strong>
-                    Motocykl: Model / Pojemność<br>
-                    Rola: Członek założyciel
-                </div>
             </div>
         </section>
 
@@ -126,86 +104,6 @@
             </div>
         </section>
 
-        <!-- DODAJ CZŁONKA -->
-        <section id="dodaj-czlonka" class="section section-full page-section">
-            <h3>Dodaj członka klubu</h3>
-            <div class="card">
-                <form class="form">
-                    <div class="form-group">
-                        <label for="nick">Ksywa / pseudonim</label>
-                        <input type="text" id="nick" name="nick" placeholder="Np. Żbik" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="imie">Imię</label>
-                        <input type="text" id="imie" name="imie" placeholder="Imię" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="moto">Motocykl</label>
-                        <input type="text" id="moto" name="moto" placeholder="Model, pojemność, rocznik" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="rola">Rola w klubie</label>
-                        <select id="rola" name="rola">
-                            <option value="czlonek">Członek</option>
-                            <option value="prezes">Prezes</option>
-                            <option value="zastepca">Zastępca prezesa</option>
-                            <option value="road-captain">Road Captain</option>
-                            <option value="mechanik">Mechanik</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="opis-czlonka">Krótki opis</label>
-                        <textarea id="opis-czlonka" name="opis_czlonka" rows="3" placeholder="Kilka słów o nim/niej..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-primary">Dodaj członka</button>
-                </form>
-            </div>
-        </section>
-
-        <!-- DODAJ TRASĘ -->
-        <section id="dodaj-trase" class="section section-full page-section">
-            <h3>Dodaj trasę</h3>
-            <div class="card">
-                <form class="form">
-                    <div class="form-group">
-                        <label for="nazwa-trasy">Nazwa trasy</label>
-                        <input type="text" id="nazwa-trasy" name="nazwa_trasy" placeholder="Np. Jeziora Północy" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="dystans">Dystans (km)</label>
-                        <input type="number" id="dystans" name="dystans" min="1" step="1" placeholder="Np. 150" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="poziom">Poziom trudności</label>
-                        <select id="poziom" name="poziom">
-                            <option value="latwa">Łatwa</option>
-                            <option value="srednia">Średnia</option>
-                            <option value="trudna">Trudna</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="opis-trasy">Opis trasy</label>
-                        <textarea id="opis-trasy" name="opis_trasy" rows="4" placeholder="Co po drodze, nawierzchnia, postoje, widoki..."></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="mapa">Link do mapy (np. Google Maps)</label>
-                        <input type="url" id="mapa" name="mapa" placeholder="https://...">
-                    </div>
-
-                    <button type="submit" class="btn-primary">Dodaj trasę</button>
-                </form>
-            </div>
-        </section>
-
         <!-- GALERIA -->
         <section id="galeria" class="section section-full page-section">
             <h3>Galeria</h3>
@@ -220,7 +118,13 @@
             <div class="card">
                 <ul class="contact-list">
                     <li>E-mail: kontakt@motoreset-lachowice.pl</li>
-                    <li>Facebook / Instagram: @twojklubmoto</li>
+                    <li>Facebook:
+                        <a href="https://www.facebook.com/TWOJA_NAZWA_STRONY"
+     target="_blank"
+     rel="noopener noreferrer">
+     MotoReset Lachowice
+  </a>
+</li>
                     <li>Spotkania: każdy piątek, godz. 19:00, adres garażu / miejscówki</li>
                 </ul>
             </div>
@@ -228,7 +132,7 @@
     </main>
 
     <footer>
-        <p>© 2025 MotoReset Lachowice – Wszystkie prawa zastrzeżone</p>
+        <p>© 2026 MotoReset Lachowice – Wszystkie prawa zastrzeżone</p>
     </footer>
 
     <!-- SKRYPT: HAMBURGER + PRZEŁĄCZANIE SEKCJI -->
